@@ -1,0 +1,682 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+	
+<style type="text/css">
+.title{
+      min-height: 100vh;
+      background-image:url(https://images.unsplash.com/photo-1488885064048-f182e4985f98?dpr=1&auto=compress,format&fit=crop&w=1334&h=&q=80&cs=tinysrgb&crop=);
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed; 
+
+}  
+
+.btn-outline-light:hover {
+
+      color:#333;
+}
+
+.bg-a{
+      background-size: cover;
+      background-position: center center;
+}
+.bg-b{
+      background-attachment: fixed; 
+}
+
+.bg-c{
+      background-size: 100vh;
+      background-position: center center;
+}
+
+
+#watchme{
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+}
+#watch{
+
+  visibility:hidden;
+}
+#watch1{
+
+  visibility:hidden;
+}
+
+@-webkit-keyframes slidein {
+  
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+
+@-webkit-keyframes ww {
+  
+  from {
+    padding-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-right:0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes ww {
+  from {
+    padding-right:  100%;
+    width: 300%;
+  }
+
+  to {
+    padding-right:0%;
+    width: 100%;
+  }
+}
+
+
+
+
+75% {
+  font-size: 300%;
+  padding-left: 25%;
+  width: 150%;
+}
+
+
+
+
+
+</style>
+</head>
+
+
+<body onload="setup()">
+
+<div class="title d-flex justify-content-center align-items-center">
+  <div class="text-center">
+    <img src="img/DSC_0015.jpg" class= "rounded-circle" > 
+    <h1 style="color:#696969;font-family:fantasy;">My Resume </h1>
+    <h2 style="color:#696969;font-family:fantasy;">Front-end Developer</h2>
+    
+    <div class="mt-4">
+      <a href="#About Me" class="btn btn-outline-info">GET STARED</a>
+      
+      <a href="#Skill" class="btn btn-outline-light">Skill</a>
+    </div>
+  
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:rgba(0,0,0,.6)">
+  <a class="navbar-brand" href="#"><i class="fa fa-address-card " aria-hidden="true" fa-2x></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#About Me">About Me <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#Skill">Skill</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link " href="#Autobiography">Autobiography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#Paper">Paper</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link " href="#Contact ME">Contact ME</a>
+      </li>
+
+
+    </ul>
+    
+  </div>
+</nav>
+
+ <section class="py-5">
+    <div class="container">
+
+      <h2 class="text-center" style="font-family:monospace;" id="About Me">About Me</h2>
+      <p class="text-center" style="font-family:monospace;">Cogito ergo sum</p>
+      <br>
+      <div class="row">
+          <div class="col-md-6 ">
+              <img class="img-fluid rounded"  src="img/20171007_171013_0008.jpg" height="80%" width="60%" style="float:right">            
+          </div>
+          <div class="col-md-6 container text-black" style="font-family:monospace;letter-spacing:6px;">
+              <br>
+              
+              <h4>
+                陳家偉  (isaac)
+              </h4>
+              <br>
+              <br>
+              <p>
+                <font size="2">
+                
+                出生日期： 1993 年 06 月 xx 日
+                <br>
+                <br>
+                身高體重： 179 公分 65 公斤
+                <br>
+                <br>
+                E-mail： xxxxxxxx @ gmail.com
+                <br>
+                <br>
+                聯絡電話： 0988xxxxxx
+                <br>
+                <br>
+                住家 :  (05)xxxxxxx
+                <br>
+                <br>
+                聯絡方式：電話聯絡
+                <br>
+                <br>
+                通訊地址：嘉義縣中埔鄉和美村
+                <br>
+                <br>
+                役畢日期 : 2017年08月
+                <br>
+                <br>
+                </font>
+              </p>
+              
+          </div>
+
+      </div>
+    </div>
+ </section>
+
+ <section  class="py-5 bg-a bg-b" style="background-image:url( https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?dpr=1&auto=compress,format&fit=crop&w=1949&h=&q=80&cs=tinysrgb&crop=) ">
+    <div class="container" style="font-weight:bold;font-family:fantasy;">
+      
+
+      <h2 class="text-center" style="font-family:fantasy;" id="Education"><i class="fa fa-child" aria-hidden="true" fa-2x></i><strong>&ensp;學經歷</strong></h2>
+      <br>
+      <br>
+     
+   
+
+
+
+
+
+                        <div class="row bg-a bg-b text-center" style="font-family:fantasy;">
+                          <div class="col-md-6">
+                                 
+                                 <h4><i class="fa fa-graduation-cap" aria-hidden="true" fa-2x></i> &ensp;學歷 : 國立高雄海洋科技大學 學士 (NKMU)</h4>
+                                  <p class="text-center"> 
+                                  <br>
+                                  <br>
+                                  科系名稱：資訊管理系 
+                                  <br>
+                                  <br>
+                                  學程 :  海事資訊管理
+                                  <br>
+                                  <br>
+                                  就學期間：2012/06～2016/06 (畢業) 
+                                  <br>
+                                  <br> 
+                                  </p>
+                          </div>
+                          <div class="col-md-6 bg-a bg-b ">
+                              <h4>&ensp;<i class="fa fa-handshake-o" aria-hidden="true" fa-2x></i>&ensp; 經歷 : 金屬工業研究發展中心  (MIRDC)</h4>
+                          
+                                  <p class="text-center">                                                           
+                                  <br>
+                                  <br>
+                                  職務類別：資訊助理人員
+                                  <br>
+                                  <br>
+                                  期間： 2015/07～ 2016/02
+                                  <br>
+                                  <br>   
+                                  公司規模：500人以上
+                                  <br>
+                                  <br>
+                                   </p> 
+
+                          </div>
+
+
+
+
+
+     
+
+
+   </div>
+ </section>
+	<section  class="py-5 bg-a bg-b" style="background-image:url(https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?dpr=1&auto=compress,format&fit=crop&w=1949&h=&q=80&cs=tinysrgb&crop=) ">
+
+
+    <div class="container " style="font-weight:bold;font-family:fantasy;">
+      
+
+      <h2 class="text-center" style="font-family:fantasy;" id="Skill"><i class="fa fa-wrench" aria-hidden="true" fa-3x></i><strong>&ensp;技能專長</strong></h2>
+      <br>
+      <br>
+     
+   
+
+
+
+
+
+            <div class="row bg-a bg-b " style="font-weight:bold;font-family:fantasy;">
+                          <div class="col-md-6 " >
+                                 
+                                 <h4 id="watchme" ><strong>擅長工具：</strong></h4>
+                                 <br>
+                                  <p> 
+                                  <span id="output"></span> 
+                                  <br>
+                                  <span id="output2"></span> 
+                                  <br>
+                                  <span id="output3"></span>
+                                  <br>
+                                  <span id="output4"></span> 
+                                  <br>
+                                  <span id="output5"></span> 
+                                  
+                                  
+
+                                  
+
+
+                                  </p>
+                          
+                          </div>
+                          <div class="col-md-6 bg-a bg-b text-right" style="font-family:fantasy;">
+                              <h4><strong>證照資格：</strong></h4>
+                          
+                                  <p >                                                           
+                                  <br>
+                                  
+                                  TQC+ Java程式設計專業人員
+                                  <br>
+                                  <br>
+                                  Microsoft Certified Professional
+                                  <br>
+                                  <br>
+                                  Microsoft Certified Technology Specialist
+                                  <br>
+                                  <br>
+                                  Microsys Solution Certified Specialist
+                                  <br>
+                                  <br>
+                                  專案管理軟體應用Project 2007
+                                  <br>
+                                  <br> 
+                                  EEC企業電子化規劃師-網路行銷
+                                  <br>
+                                  <br> 
+                                  EEC系列-企業電子化助理規劃師
+                                  <br>
+                                  <br>
+                                  TQC-DK電子商務概論
+                                  <br>
+                                  <br> 
+                                  TQC-DK-專案管理概論-專業級PM3                                                                          
+                                  <br>
+                                  <br> 
+                                  乙級電腦軟體應用技術士 
+                                  <br>
+                                  <br> 
+                                  丙級電腦軟體應用技術士
+
+                                  <br> 
+                                  <br>
+                                   丙級會計事務技術士
+                                   <br>
+                                   <br> 
+                                  調查與研究方法分析師
+                                  <br>
+                                  <br>
+                                  <i class="fa fa-language" aria-hidden="true fa-2x"></i>
+                                  GEPT初級
+                                  <br>
+                                  <br>
+                                  <i class="fa fa-language" aria-hidden="true fa-2x"></i>
+                                    
+                                  中華民國商業職業教育學會 英文能力測驗第四級
+                                  <br>
+                                  <br>
+                                  TQC-OA-中文輸入
+                                  <br>
+                                  <br>
+                                  普通小客車駕照
+                                  <br>
+                                  <br> 
+                                  普通重型機車駕照
+                                  <br>
+                                  <br>
+                                   <br> 
+
+                                   </p> 
+
+                          </div>
+
+
+
+
+
+
+
+
+     
+        </div>
+
+   </div>
+ </section>
+
+
+
+
+
+ <section  class="py-5 bg-a bg-b" style="background-image:url( https://images.unsplash.com/photo-1489566072773-ddefc463a599?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=)" style="background-color:rgba(0,0,0,.6)" >
+   
+
+    <div id="Autobiography" class="container text-white" style="font-family:微軟正黑體;">
+
+      
+      <br>
+      
+          
+              
+              <br>
+                    <div class="text-center ">      
+                          <h2 style="font-family:微軟正黑體;"><i class="fa fa-file" aria-hidden="true" fa-2x></i><strong>&ensp;自傳</strong></h2>
+
+                    </div>
+              
+
+              <div class="text-left ">
+              
+              
+              
+
+              <p>
+              <br>
+              <br>
+
+              一 . 出生地：
+            <strong>
+            <br><br>
+  &ensp;&ensp;&ensp;&ensp;我來自嘉義縣中埔鄉，位於台灣嘉義縣南部，北鄰嘉義市東區，西鄰水上鄉，東北連番路鄉，東南連大埔鄉，南接臺南市白河區。空氣清新，交通方便，悠閒樸實的好地方!
+<br><br>
+二 . 家庭狀況：
+<br><br>
+  &ensp;&ensp;&ensp;&ensp;我生長在一個平凡但很美滿的小家庭，家中有愛我的父母、疼我的爺爺奶奶、指導我的兩個姊姊，從小父母用良好的身教及民主的方式來管教我，希望我能主動學習及獨立自主，並且適時地給予我鼓勵和建議，也培養了我樂觀的人生態度，讓我能夠在遇到挫折時，能很快地再站起來，不怕苦再重新開始，勇敢地面對問題，勇於接受挑戰，更是我的堅持！<br><br>
+  課業上的問題我總是會問姊姊尋求解答，而她們也會在日常生活中告訴我飲水思源的觀念，自小便根深在我的心靈裡，成為日後人格發展的一個重要的基礎，讓我在當中培養健全的自我判斷力，不易與人衝突的個性，更告訴我「想要有收穫一定要耕種」！<br><br>
+
+三 . 求學歷程：<br><br>
+    &ensp;&ensp;&ensp;&ensp;因為外語能力的重要，高一取得全民英檢初級的合格證書和商教會英文檢定的證照。<br><br>
+  高二擔任棋藝社副社長以及圖書股長，這不僅培養我慎思的個性和閱讀的興趣，更是讓我學習到服務別人的愉悅和負責任的正確態度！<br><br>
+  上了大學後對電腦有著深厚興趣的我，於是選擇了資訊管理科；網頁設計、程式語言讓我的電腦知識更加鞏固，也取得了許多電腦相關證照，從中也發現了自己對於網頁的方面十分有興趣，期許自己能在相關行業好好發展以及努力地盡一份力。<br><br>
+
+學校名稱  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;年級 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;幹部、特殊經驗<br><br>
+
+國立華南高級商業職業學校  &ensp;&ensp;二年級 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;棋藝社副社長<br><br>
+國立華南高級商業職業學校  &ensp;&ensp;二年級　三年級　&ensp;&ensp;&ensp;&ensp;&ensp; 圖書股長、學藝股長<br><br>
+國立高雄海洋科技大學  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;一年級 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;公關<br><br>
+國立高雄海洋科技大學 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;二年級 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;服務股長<br><br>
+
+
+
+四 . 人格特質：<br><br>
+  &ensp;&ensp;&ensp;&ensp;「勇敢地面對問題，勇於接受挑戰」，樂觀的我，遇到事情不會沮喪太久，我認為沮喪無法解決任何事情，倒不如堅強點站起來面對各種迎面而來的難題才是實在的，自己的力量微乎其微，但是團結的力量卻是無比龐大，自己解決不了的，就尋求別人的幫助，不管是面對什麼事情，團結絕對是不可或缺的一項因素！<br><br>
+
+五 . 人生觀念：<br><br>
+  &ensp;&ensp;&ensp;&ensp;「幫助別人，成長自己」，人與人之間就是要互相溝通、了解並且幫忙，除了充實自己也縮短人與人之間的距離，進而更了解自己，更知道自己的能力到哪裡？還能做到多好？還有什麼事我能做的？這很重要，這是我一輩子都該探討而且行動的事情！<br><br><br></strong>
+
+              
+                
+              </p>
+              
+         </div>
+
+      </div>
+    </div>
+ </section>
+
+
+
+
+<section  onmouseover="setup1()" class="py-5 bg-a bg-b ">
+   
+
+    <div class="container">
+
+      
+      <br>
+      <div class="row " id="Paper">
+          
+              
+              <br>
+              <div class="text-center ">
+              
+              <a href="555.pdf" target="_blank"><h2 style="font-family:fantasy;"><i class="fa fa-graduation-cap" aria-hidden="true" fa-2x></i><strong>畢業專題文書參考</strong></h2></a>
+              <br>
+
+
+              <h1  id="watch" style="font-family:fantasy;">Thanks for your attention</h1>
+
+              <h1  id="watch1" style="font-family:fantasy;">And your sufferance.</h1>
+  
+
+              
+                
+              
+              
+         </div>
+
+      
+    </div>
+ </section>
+
+
+
+
+<section class="py-5 padding-bottom-bottom-0 bg-a bg-b ">
+   
+
+    <div class="container">
+
+      
+      <br>
+      <div class="row ">
+          
+              
+              <br>
+              <div class="text-center " id="Contact ME">
+              <h5 style="font-family:fantasy;">Copyright © 2017 isaac Inc. &ensp;&ensp;&ensp;
+              <a href="http://www.google.com.tw/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: #3B5998;"></i>
+              </a>
+              
+              &ensp;
+              <a href="http://www.google.com.tw/" target="_blank">
+              <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+              </a>
+              &ensp;
+              <a href="https://www.instagram.com/jiaweiss/" target="_blank">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              </a>
+
+              </h5>
+
+              
+
+
+              
+                
+              </p>
+              
+         </div>
+
+      </div>
+    </div>
+ </section>
+
+
+
+
+
+<script>
+
+
+function setup1() {
+   
+    var q = document.getElementById("watch");
+    q.style.visibility="visible";
+    q.style.WebkitAnimation = "slidein 3s 1"; 
+
+    var q1 = document.getElementById("watch1");
+    q1.style.visibility="visible";
+    q1.style.WebkitAnimation = "ww 3s 1"; 
+
+
+
+
+
+
+  }
+
+function setup() {
+  
+
+
+  var e = document.getElementById("watchme");
+  e.addEventListener("animationstart", listener, false);
+  e.addEventListener("animationend", listener, false);
+  
+
+  var e = document.getElementById("watchme");
+  e.className = "slidein";
+};
+
+
+
+
+/*
+var pfx = ["webkit", "moz", "MS", "o", ""];
+function PrefixedEvent(element, type, callback) {
+  for (var p = 0; p < pfx.length; p++) {
+    if (!pfx[p]) type = type.toLowerCase();
+    element.addEventListener(pfx[p]+type, callback, false);
+  }
+}
+
+// animation listener events
+PrefixedEvent(e, "AnimationStart", listener);
+
+PrefixedEvent(e, "AnimationEnd", listener);
+*/
+
+
+
+
+function listener(e) {
+  var l = document.createElement("li");
+  var z = document.createElement("li");
+  var x = document.createElement("li");
+  var c = document.createElement("li");
+  var v = document.createElement("li");
+  
+
+
+
+  switch(e.type) {
+    
+      
+     
+    case "animationend":
+      
+      l.innerHTML = "JavaScript" ;
+      z.innerHTML = "jQuery" ;
+      x.innerHTML = "Java" ;
+      c.innerHTML = "HTML" ;
+      v.innerHTML = "CSS" ;
+
+
+      
+    
+  
+  
+
+
+
+  document.getElementById("output").appendChild(l);
+   document.getElementById("output2").appendChild(z);
+    document.getElementById("output3").appendChild(x);
+     document.getElementById("output4").appendChild(c);
+      document.getElementById("output5").appendChild(v);
+
+}
+
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+ 
